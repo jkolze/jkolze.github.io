@@ -1,0 +1,30 @@
+
+
+h1 {
+font-family: 'Montserrat', sans-serif;
+font-size:21px;
+}
+
+h2, p{font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+
+}
+
+#randomNumber {
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+}
+
+ol, ul{
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+}
+.gems{
+    clear: both;
+    align:center;
+}
+.gemImage{
+	height: 60px;
+    margin: 10px;
+}
+
