@@ -43,9 +43,12 @@ h6 {
 }
 
 .bg-dark {
-  background-color: #212529 !important;
+  background-color: #f29ba1 !important;
 }
 
+.fas fa-phone {
+  color:white;
+}
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
