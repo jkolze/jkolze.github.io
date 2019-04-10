@@ -8,7 +8,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 56)
+          scrollTop: (target.offset().top - 72)
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -23,15 +23,15 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 57
+    offset: 75
   });
 
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
+      $("#mainNav").addClass("navbar-scrolled");
     } else {
-      $("#mainNav").removeClass("navbar-shrink");
+      $("#mainNav").removeClass("navbar-scrolled");
     }
   };
   // Collapse now if page is not at top
@@ -39,25 +39,8 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  // Scroll reveal calls
-  window.sr = ScrollReveal();
-  sr.reveal('.sr-icons', {
-    duration: 600,
-    scale: 0.3,
-    distance: '0px'
-  }, 200);
-  sr.reveal('.sr-button', {
-    duration: 1000,
-    delay: 200
-  });
-  sr.reveal('.sr-contact', {
-    duration: 600,
-    scale: 0.3,
-    distance: '0px'
-  }, 300);
-
   // Magnific popup calls
-  $('.popup-gallery').magnificPopup({
+  $('#portfolio').magnificPopup({
     delegate: 'a',
     type: 'image',
     tLoading: 'Loading image #%curr%...',
